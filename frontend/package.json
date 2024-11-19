@@ -37,7 +37,7 @@
   },
   "scripts": {
     "start": "npm start",
-    "build": "npm build",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
     "test": "npm test",
     "eject": "npm eject"
   },

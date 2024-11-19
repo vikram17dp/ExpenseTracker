@@ -12,7 +12,7 @@ app.use('/auth',userRouter)
 app.use('/expenses',expenseRouter)
 connectDb();
 
-const port = 4000 || process.env.PORT_NO ;
+const port = 4000 || process.env.PORT ;
 app.listen(port , ()=>{
         console.log(`Server on :- ${port}`);
 })

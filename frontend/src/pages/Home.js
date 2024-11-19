@@ -65,7 +65,7 @@ const getTotal= ()=>{
           <div className='rightbox flex flex-col gap-10 items-center w-1/2   '>
             {/* /////////////////////////// */}
             <div className='createnew bg-gray-800 w-auto rounded-3xl p-10 pb-6 pt-6 flex flex-col justify-center items-center  gap-2 relative top-5 ' >
-                <div className='font-bold text-3xl text-white font-mont  ' >Create Transaction</div>
+                <div className='font-bold text-3xl text-gray-700 font-mont  ' >Create Transaction</div>
                 <div className='flex flex-row gap-4 ' >
                   <input type='number' onChange={(e)=>setAmount(e.target.value)} placeholder='Amount ' className='h-12 w-auto text-base placeholder-black  p-4 rounded-xl outline-none focus:focus-animation '  ></input>
                   <select id="countries" onChange={(e)=>{setCategory(e.target.value); console.log(category)}} defaultValue='selected' className="bg-white w-auto outline-none border placeholder-black border-gray-300 text-gray-900 text-sm rounded-xl block   p-2.5 focus:focus-animation ">
@@ -96,7 +96,6 @@ const getTotal= ()=>{
                 
                 <a onClick={()=>{
                     const expInfo = {
-                      // amount , category , date , usersid
                       usersid : userdata._id,
                       category ,
                       date : selectDate ,
@@ -115,7 +114,6 @@ const getTotal= ()=>{
             
             </div>
 
-            {/* ////////  Creation Ended Here /////////////////// */}
 
             <div className='w-5/6 p-7  relative  rounded-xl h-auto  border-white border-2  grid gap-7  overflow-y-scroll '>
                   <div className='text-3xl text-white font-bold font-mont ' >Total Expense : ₹ {getTotal()}</div>

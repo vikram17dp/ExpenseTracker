@@ -7,13 +7,10 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 
 export function Chartss(props) {
-//  console.log(props.exdata)
-  // const [expdata ,] = useState(props.exdata);
-  // const [totalexp , setTotalexp] = useState([]);
+
   let categories = ['Grocery', 'Vehicle', 'Shopping', 'Travel', 'Food','Fun','Other'];
   const totalexp = sortCategoryWise(props.exdata , categories);
-  // console.log(totalexp)
-///////////////////////////////////////////////////////////////////////////
+
 const data = {
   labels: ['Grocery', 'Vehicle', 'Shopping', 'Travel', 'Food','Fun','Other'],
   datasets: [
@@ -46,10 +43,7 @@ const data = {
     plugins: {
 
      labels: {
-          // formatter: function (value, context) {
-          //     return context.chart.data.labels[ context.dataIndex ] + ": ₹";
-          // },
-          // render : 'categories',
+         
           arc : false,
           percision : 1,
           fontSize : 20
@@ -61,7 +55,6 @@ const data = {
 
 ;
 
-  //////////////////////////////////////////////////////////////////
   return <Doughnut className='w-full h-full' data={data} />;
 }
 

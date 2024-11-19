@@ -9,12 +9,12 @@ A fully-featured Expense-Tracker WebApp , built with the MERN stack.
 ### Database 
 <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"/>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/960fe4d9-fc14-49af-abcd-82cd94587293/deploy-status?branch=dev)](https://app.netlify.com/sites/track-yur-expense/deploys)
+
 
 ### Installation
-1) Clone this repository  
+1) GitHub repository  
 ```
-git clone https://github.com/ihtasham42/social-media-app.git
+ https://github.com/vikram17dp/ExpenseTracker.git
 ```
 2) Install dependencies  
 ```
@@ -25,15 +25,12 @@ cd..
 cd client
 npm install
 ```
-3) Configure environment variables in your new .env file. To acquire your MONGO_URI, create a cluster for free over at https://www.mongodb.com/.
-```
-MONGO_URI=<YOUR_MONGO_URI> 
-```
-4) Run the server
+
+3) Run the server
 ```
 npm run server
 ```
-5) Start a new terminal and run react's development server
+4) Start a new terminal and run react's development server
 ```
 cd social-media-app
 cd frontend

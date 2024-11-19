@@ -12,7 +12,11 @@ app.use('/auth',userRouter)
 app.use('/expenses',expenseRouter)
 connectDb();
 
-const port = 4000 || process.env.PORT ;
+const port = 4000 || process.env.PORT ; 
+app.use('*',()=>{
+        console.log("API IS WORKING!");
+        
+})
 app.listen(port , ()=>{
         console.log(`Server on :- ${port}`);
 })
